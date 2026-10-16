@@ -1,0 +1,94 @@
+[
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\check.cjs",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\check.cjs"
+  },
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\core.js",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\core.js"
+  },
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\game.js",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\game.js"
+  },
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\index.html",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\index.html"
+  },
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\preview-auto.png",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\preview-auto.png"
+  },
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\preview-cabin.png",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\preview-cabin.png"
+  },
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\preview-loading.png",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\preview-loading.png"
+  },
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\preview-ready.png",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\preview-ready.png"
+  },
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\preview-score.png",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\preview-score.png"
+  },
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\preview-ship.png",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\preview-ship.png"
+  },
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\preview-spreader-light.png",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\preview-spreader-light.png"
+  },
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\preview.png",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\preview.png"
+  },
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\README.md",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\README.md"
+  },
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\REPORT.md",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\REPORT.md"
+  },
+  {
+    "Source": "D:\\AIcode\\Game\\prototypes\\harbor-operator\\server.cjs",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\prototypes\\harbor-operator\\server.cjs"
+  },
+  {
+    "Source": "D:/AIcode/Game/docs/harbor-design-notes.md",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\docs\\harbor-design-notes.md"
+  },
+  {
+    "Source": "D:/AIcode/Game/docs/harbor-full-version-decisions.md",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\docs\\harbor-full-version-decisions.md"
+  },
+  {
+    "Source": "D:/AIcode/Game/docs/harbor-future-plan.md",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\docs\\harbor-future-plan.md"
+  },
+  {
+    "Source": "D:/AIcode/Game/docs/game-references.md",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\docs\\game-references.md"
+  },
+  {
+    "Source": "D:/AIcode/Game/docs/reviews-2106720.json",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\docs\\reviews-2106720.json"
+  },
+  {
+    "Source": "D:/AIcode/Game/docs/reviews-2487300-recent.json",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\docs\\reviews-2487300-recent.json"
+  },
+  {
+    "Source": "D:/AIcode/Game/docs/reviews-2487300.json",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\docs\\reviews-2487300.json"
+  },
+  {
+    "Source": "D:/AIcode/Xiaohongshu/game-comment-analysis.md",
+    "Destination": "D:\\AIcode\\Game\\gantry-crane\\docs\\game-comment-analysis.md"
+  }
+]
