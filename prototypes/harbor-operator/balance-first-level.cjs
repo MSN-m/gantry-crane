@@ -1,10 +1,9 @@
 // PROTOTYPE - NOT FOR PRODUCTION
-// Question: Does level one reward deliberate color grouping over casual legal placement?
-// Date: 2026-10-19
-const h=require('./core.js');
-function take(s,lane){s.camera=h.dockY[lane];s.cameraX=0;s.truckWait[lane]=0;if(!h.contact(s).ok)throw Error('Pickup failed');}
-function drop(s,bay,half){s.camera=h.slots[bay];s.half=half;if(!h.contact(s).ok)throw Error('Drop failed');}
-function planned(){const s=h.create('mono');let firstTarget=null;for(let i=0;i<h.totalCargo;i++){take(s,i%2);const color=h.colors.indexOf(s.held.color);drop(s,s.held.size===2?color:4+Math.floor(color/2),color%2);if(!firstPass&&h.outcome(s).scoreReached)firstPass={boxes:s.delivered,units:h.score(s).units,score:h.score(s).total};}return {score:h.score(s).total,firstPass};}
-let seed=20261019;function rand(n){seed=(Math.imul(seed,1664525)+1013904223)>>>0;return Math.floor(seed/4294967296*n);}
-const completed=[],blocked=[];for(let trial=0;trial<1000;trial++){const s=h.create('mono');for(let i=0;i<24;i++){const choices=[];for(let lane=0;lane<2;lane++){if(!s.trucks[lane])continue;s.held=s.trucks[lane];for(let bay=0;bay<6;bay++)for(let half=0;half<(s.held.size===2?1:2);half++)if(h.placement(s,bay,half))choices.push({lane,bay,half});}s.held=null;if(!choices.length)break;const p=choices[rand(choices.length)];take(s,p.lane);drop(s,p.bay,p.half);}const p=h.score(s);(p.units===36?completed:blocked).push(p.total);}
-completed.sort((a,b)=>a-b);const stats={seed:20261019,trials:1000,goal:h.scoreGoal,colors:h.colors,planned:planned(),random:{completed:completed.length,blocked:blocked.length,completedMedian:completed[Math.floor(completed.length/2)],completedMin:completed[0],completedMax:completed.at(-1),passed:completed.filter(n=>n>=h.scoreGoal).length}};console.log(JSON.stringify(stats,null,2));
+// Question: Baseline score distribution for phase-one batches; not a human win-rate estimate.
+// Date: 2026-10-21
+const h=require('./core.js');let seed=20261021;
+function rand(n){seed=(Math.imul(seed,1664525)+1013904223)>>>0;return Math.floor(seed/4294967296*n);}
+function pick(s,lane){const d=h.destination(h.dockIds[lane]);s.camera=d.y;s.cameraX=d.x;return h.contact(s);}
+function drop(s,bay,half){s.camera=h.slots[bay];s.cameraX=s.held.size===1?(half?37.5:-37.5):0;s.half=half;return h.contact(s);}
+function planned(){const s=h.create(20261021,{orders:false});for(let b=0;b<6;b++){for(let lane=0;lane<4;lane++){pick(s,lane);const color=h.colors.indexOf(s.held.color);drop(s,s.held.size===2?color:4+Math.floor(color/2),color%2);}h.nextBatch(s);}return h.score(s).total;}
+const trials=1000,scores=[];let passed=0,full=0;for(let trial=0;trial<trials;trial++){const s=h.create(20261021+trial,{orders:false});for(let batch=0;batch<6;batch++){for(let turn=0;turn<4;turn++){const choices=[];for(let lane=0;lane<4;lane++){if(!s.trucks[lane])continue;const temp={...s,held:s.trucks[lane]};for(let bay=0;bay<6;bay++)for(let half=0;half<(temp.held.size===2?1:2);half++)if(h.placement(temp,bay,half))choices.push({lane,bay,half});}if(!choices.length)break;const p=choices[rand(choices.length)];pick(s,p.lane);drop(s,p.bay,p.half);}h.nextBatch(s);}const points=h.score(s);scores.push(points.total);passed+=Number(h.outcome(s).scoreReached);full+=Number(points.units===36);}scores.sort((a,b)=>a-b);console.log(JSON.stringify({phase:1,seed:20261021,trials,goals:h.goals,highScoreGoal:h.highScoreGoal,plannedFullColumn:planned(),randomLegalPolicy:{median:scores[Math.floor(trials/2)],min:scores[0],max:scores.at(-1),firstColumnPassed:passed,full},limitation:'No work orders or buffer strategy simulated; these are synthetic policy outcomes, not player pass rates.'},null,2));

@@ -1,0 +1,109 @@
+{
+  "version": "phase3-v2",
+  "seedStart": 20261021,
+  "trials": 200,
+  "parameters": {
+    "version": "phase3-v2",
+    "goals": [
+      2600,
+      3000
+    ],
+    "highScoreGoal": 8000,
+    "basePerHalf": 50,
+    "samePerHalf": 25,
+    "orders": {
+      "priority": 20,
+      "clientStart": 20,
+      "clientGrowth": 5,
+      "relayStep": 10,
+      "corner": 60,
+      "flat": 25,
+      "rush": 1.5
+    },
+    "feedback": {
+      "stepMs": 150,
+      "receiptMs": 2200
+    }
+  },
+  "policies": {
+    "casual": "Same as ordinary, but advance/finish immediately on reaching each column gate; demonstrates partial-load delivery.",
+    "ordinary": "First actual offer, visible cargo only; prefer lower legal stacks; no color or order optimization.",
+    "single": "Prefer client/priority drafts, fixed color lanes, incoming truck order; full-load spatial route.",
+    "combo": "Prefer multiplier/review drafts; fixed color lanes, choose best immediate visible payout and card order."
+  },
+  "results": {
+    "casual": {
+      "runs": 200,
+      "passed": 137,
+      "high": 0,
+      "total": {
+        "min": 1940,
+        "p10": 2245,
+        "median": 5767,
+        "p90": 6080,
+        "max": 6775
+      },
+      "columnMedians": [
+        2627,
+        3180
+      ],
+      "meanLoadRate": 61.930555555555586,
+      "meanReleased": 10.385
+    },
+    "ordinary": {
+      "runs": 200,
+      "passed": 136,
+      "high": 85,
+      "total": {
+        "min": 1940,
+        "p10": 2245,
+        "median": 7703,
+        "p90": 12559,
+        "max": 15280
+      },
+      "columnMedians": [
+        2776,
+        5627
+      ],
+      "meanLoadRate": 81.19444444444466,
+      "meanReleased": 1.1
+    },
+    "single": {
+      "runs": 200,
+      "passed": 200,
+      "high": 149,
+      "total": {
+        "min": 6735,
+        "p10": 7515,
+        "median": 10200,
+        "p90": 13035,
+        "max": 15614
+      },
+      "columnMedians": [
+        3135,
+        6600
+      ],
+      "meanLoadRate": 100,
+      "meanReleased": 0
+    },
+    "combo": {
+      "runs": 200,
+      "passed": 200,
+      "high": 199,
+      "total": {
+        "min": 7508,
+        "p10": 9020,
+        "median": 9313,
+        "p90": 14134,
+        "max": 16420
+      },
+      "columnMedians": [
+        3604,
+        6178
+      ],
+      "meanLoadRate": 100,
+      "meanReleased": 0
+    }
+  },
+  "limitations": "Synthetic policies, not player win rates. Planned policies know the balanced pool composition but never inspect future batches. No buffer strategy, human decision time, device performance or subjective feel is modeled."
+}
