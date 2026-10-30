@@ -1,0 +1,588 @@
+{
+  "date": "2026-10-30",
+  "scope": "Current workspace files, including pre-existing and other-chat outputs; index only, not a backup.",
+  "excluded": [
+    "Git internals",
+    "node_modules",
+    "hosting .openai metadata",
+    "manifest self"
+  ],
+  "fileCount": 109,
+  "currentVersion": "phase4-v3",
+  "netlifyComparison": [
+    {
+      "name": "index.html",
+      "matchesCurrent": true
+    },
+    {
+      "name": "config.js",
+      "matchesCurrent": true
+    },
+    {
+      "name": "orders.js",
+      "matchesCurrent": true
+    },
+    {
+      "name": "core.js",
+      "matchesCurrent": true
+    },
+    {
+      "name": "game.js",
+      "matchesCurrent": true
+    }
+  ],
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 1449,
+      "sha256": "3aab6d88e676b941d45f4ecb0b16f2e2326ca322b7e07efa9c96abf2572f102f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2928,
+      "sha256": "781b45e6906f74b0f2015888d95361eaed216797d6b8a56a97df55ac9d13d672"
+    },
+    {
+      "path": "docs/comparable-game-rules-2026-10-20.md",
+      "bytes": 12897,
+      "sha256": "4ec42bf9ef52542f4fc5667dd3b31dddc4785f2885b6871abe334c9b0e138ac5"
+    },
+    {
+      "path": "docs/file-migration-2026-10-16.json",
+      "bytes": 4078,
+      "sha256": "b1ddb2fdf94b02f28d97ae651e4a35ba624417ca04d4eb2dab45277530a5cfaa"
+    },
+    {
+      "path": "docs/game-comment-analysis.md",
+      "bytes": 4136,
+      "sha256": "30b5b6480abd774ab4090f998828637ce4254b9577d87267dbffb0d00c2eab82"
+    },
+    {
+      "path": "docs/game-references.md",
+      "bytes": 1641,
+      "sha256": "c23d4c641b01725769fdd963de87a37170eb30b4f9c608919722625c1f09a1f6"
+    },
+    {
+      "path": "docs/harbor-contract-grading-review.md",
+      "bytes": 8522,
+      "sha256": "6e03a491d22758d085ac44f402f114bf82c4d70ee919c351ad6b0000cae97688"
+    },
+    {
+      "path": "docs/harbor-contract-score-analysis.md",
+      "bytes": 8115,
+      "sha256": "8f4b5209642b26a003ffae865a332838b6e5edf24ed2812db0fc4277d1b48a6c"
+    },
+    {
+      "path": "docs/harbor-design-notes.md",
+      "bytes": 2148,
+      "sha256": "1c772cf592ca14ef82c64471d88324727d66417f9d1aa86249c813d4c6752d5f"
+    },
+    {
+      "path": "docs/harbor-first-level-balance.md",
+      "bytes": 2700,
+      "sha256": "163862296e2ca8a02627207aa82b654cd8e2e12fe1696ed9c8da7dbf67e268de"
+    },
+    {
+      "path": "docs/harbor-full-version-decisions.md",
+      "bytes": 4183,
+      "sha256": "9cbb6b7e165e9072ec9b3a02ec8d6181c4ae0fe745439f4246652feb6f6e9121"
+    },
+    {
+      "path": "docs/harbor-future-plan-2026-10-19.md",
+      "bytes": 11565,
+      "sha256": "36846acc813c6420b69e6f702dc176286053ece5d4a208c5e582c4820ebd37d7"
+    },
+    {
+      "path": "docs/harbor-future-plan.md",
+      "bytes": 20064,
+      "sha256": "aeb5312299e2c3ebdb3999bdca60f54a3fe15722df178ca139a21e9cfc452a8f"
+    },
+    {
+      "path": "docs/harbor-idea-backlog.md",
+      "bytes": 84858,
+      "sha256": "618aea840df256de8147d39a63c4ef4ef348840e745823c6b5e16b2c6bff5b44"
+    },
+    {
+      "path": "docs/harbor-onboarding-balance-2026-10-30.md",
+      "bytes": 5080,
+      "sha256": "30fd9ccc8c765e1792b6d1bfb4e22c74347137371afa22ce18deb24008658801"
+    },
+    {
+      "path": "docs/harbor-prototype-plan-2026-10-21.md",
+      "bytes": 26660,
+      "sha256": "79a5f5fabb28d9e7b2f089af0e8b8805a1105c95320af0975eb73c10bc8c9176"
+    },
+    {
+      "path": "docs/harbor-session-2026-10-19.md",
+      "bytes": 6116,
+      "sha256": "64f977ec23856e171b41b9bdd00643e0b3738cf657e863de85c4c2ff0495cb78"
+    },
+    {
+      "path": "docs/harbor-session-2026-10-22.md",
+      "bytes": 12809,
+      "sha256": "1784ecd1f64d0171bf01307f020563e3a68b33c04e2aa612c0329cc1360139df"
+    },
+    {
+      "path": "docs/harbor-session-2026-10-23.md",
+      "bytes": 7227,
+      "sha256": "27f52abf3a5c8eefd23f32352c0a81e48a52db5d1de8375d54fdf8be737a8844"
+    },
+    {
+      "path": "docs/harbor-session-2026-10-30.md",
+      "bytes": 7912,
+      "sha256": "c1ffcdb771fdcd027bcea3318a92b9eacbf7a55a46d3258978987f590fa43524"
+    },
+    {
+      "path": "docs/harbor-sites-playtest.md",
+      "bytes": 5863,
+      "sha256": "dbc68dcb61700cfe42e79f56e46fab14c5e3760c1928f629bf7ed91b95bfc037"
+    },
+    {
+      "path": "docs/harbor-work-order-registry.md",
+      "bytes": 45107,
+      "sha256": "f8d875c93de1761a1ff8e109ddf3ca17a77becaf597f89b9140318995c8b5b50"
+    },
+    {
+      "path": "docs/reviews-2106720.json",
+      "bytes": 75455,
+      "sha256": "d4248edcdaa6625545d01e2be66145414f1602b567651d2007a668c77de1d349"
+    },
+    {
+      "path": "docs/reviews-2487300-recent.json",
+      "bytes": 60507,
+      "sha256": "17a8ba64ba4b99cf7268b1903825d22eb4726a8bfffe24624eec10c2099174a3"
+    },
+    {
+      "path": "docs/reviews-2487300.json",
+      "bytes": 242060,
+      "sha256": "7536245c2b8fc0b65c2709eb30732ed85cee39c9f9b89db137deb80a3d5304d8"
+    },
+    {
+      "path": "docs/港口吊装游戏开发与三端上架步骤.md",
+      "bytes": 10706,
+      "sha256": "815c97ca65fb87ca33d0563dcf5c1871282d893a385d597d184c61c204b713cc"
+    },
+    {
+      "path": "prototypes/harbor-operator/README.md",
+      "bytes": 13489,
+      "sha256": "a732bc2720ef1e94ebb8aae8cd20d871a1d7bfaf3bab1f838c026870457ce18f"
+    },
+    {
+      "path": "prototypes/harbor-operator/REPORT.md",
+      "bytes": 33082,
+      "sha256": "c4c2254b322549beac28af651cd89d254700fe9641168bb88c8860911d7404b3"
+    },
+    {
+      "path": "prototypes/harbor-operator/balance-first-level.cjs",
+      "bytes": 1899,
+      "sha256": "4617541ad68b4b47931f5ba456a754ab023eec0639f425dcfc851acdca7f67f5"
+    },
+    {
+      "path": "prototypes/harbor-operator/balance-phase-three-results-phase3-v1.json",
+      "bytes": 2615,
+      "sha256": "c617254355bc3457a91b3a5f1a810ad81ab77db39df8c8bb68885859f57b3a53"
+    },
+    {
+      "path": "prototypes/harbor-operator/balance-phase-three-results.json",
+      "bytes": 2595,
+      "sha256": "a6a3c5aafdc9d58eeb21a07adbef21c0b99a92d4a62ce7a97713ab66331e1b2f"
+    },
+    {
+      "path": "prototypes/harbor-operator/balance-phase-three.cjs",
+      "bytes": 4216,
+      "sha256": "b546b2b64e25b9694d641698bdd59d613e586c20f5b743c777ac7157ff2dc1f6"
+    },
+    {
+      "path": "prototypes/harbor-operator/check-browser.cjs",
+      "bytes": 440,
+      "sha256": "fc2665c556883ace17c6fc2188aa98cfd3b85d9caf7b7e8e9fb9e074c1298fcc"
+    },
+    {
+      "path": "prototypes/harbor-operator/check-cancel-browser.cjs",
+      "bytes": 4442,
+      "sha256": "9b8264b7ee78f88d803ef056dece1a3c6559932f9a5efa6b09e1d33cf7cd4ad5"
+    },
+    {
+      "path": "prototypes/harbor-operator/check-cancel.cjs",
+      "bytes": 4501,
+      "sha256": "0d315ca46666bf030d571a4503f87f300487fa46222e2a5b0021467374c0e6e2"
+    },
+    {
+      "path": "prototypes/harbor-operator/check-difficulty.cjs",
+      "bytes": 1305,
+      "sha256": "64dac8056ae1e1f09913fd037aa10f0562ac57697957c7bd2d8b9a08d5076200"
+    },
+    {
+      "path": "prototypes/harbor-operator/check-economy-browser.cjs",
+      "bytes": 4728,
+      "sha256": "6d05c0535ea5685f0a62b30b16f3bdec036ac06f3959373cdf2d83bd313e736d"
+    },
+    {
+      "path": "prototypes/harbor-operator/check-economy.cjs",
+      "bytes": 5330,
+      "sha256": "cbb76a7f6da12d5bad9101530d8dfe51e8a4f6fdc38dcacaf442e929415d17e2"
+    },
+    {
+      "path": "prototypes/harbor-operator/check-goal-prompt-browser.cjs",
+      "bytes": 2845,
+      "sha256": "a088667539363f2f61ad9342b765631090fbb7d2e42ebe169f231488f635a58c"
+    },
+    {
+      "path": "prototypes/harbor-operator/check-orders.cjs",
+      "bytes": 8039,
+      "sha256": "78b03472cb3bdd8fe30892c2d7c44529e98efd6e53d845b431bd53a414a1cdbc"
+    },
+    {
+      "path": "prototypes/harbor-operator/check-pan-browser.cjs",
+      "bytes": 5652,
+      "sha256": "c2ee6e2a42bf41ce23241c6b4a005754bb77f38dae22dbde50adc5793311e05a"
+    },
+    {
+      "path": "prototypes/harbor-operator/check-phase-three-browser.cjs",
+      "bytes": 5888,
+      "sha256": "3c17f05d0b9fbddc10651961e0cedd098fcd2c44dc0fac506eab8ac38d2a5ca3"
+    },
+    {
+      "path": "prototypes/harbor-operator/check-phase-three.cjs",
+      "bytes": 2665,
+      "sha256": "996d7744ee01dbb6dacc4c762bce07eb1ec18a1b38e7f4e69915e200e2375a33"
+    },
+    {
+      "path": "prototypes/harbor-operator/check.cjs",
+      "bytes": 8531,
+      "sha256": "195d77bdb4101448a84631d0ae4f8dd64347d52fd35a7761c3c4a4c979e9b60e"
+    },
+    {
+      "path": "prototypes/harbor-operator/config.js",
+      "bytes": 641,
+      "sha256": "8e7f181c4b0e7e182c4b32f431fb283c645bd47e0fdac77e5dea7a1a9bf310f0"
+    },
+    {
+      "path": "prototypes/harbor-operator/core.js",
+      "bytes": 16734,
+      "sha256": "d9804364ee9466035da333b142da9a06631f60f43e62823d134bb65e22ada25b"
+    },
+    {
+      "path": "prototypes/harbor-operator/game.js",
+      "bytes": 40186,
+      "sha256": "c714dc37170d0dc10ad158b1a9edbc75d808dcce91bb4b09f29b0a7793341af8"
+    },
+    {
+      "path": "prototypes/harbor-operator/index.html",
+      "bytes": 9609,
+      "sha256": "a80c5795a995cee1e0dacc492bbfcd8149f9e995638260c9a9ec05872379a0f4"
+    },
+    {
+      "path": "prototypes/harbor-operator/orders.js",
+      "bytes": 10719,
+      "sha256": "35b1c08d56d0b853f9401a775091259db00bedfcb7b3b606c2f7deb9ce31260d"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-area-navigation.jpg",
+      "bytes": 48506,
+      "sha256": "9892074b1b2bc65f8418f5df2c844aeeba25e173eda1a5075924ff05aee65f18"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-auto.png",
+      "bytes": 50097,
+      "sha256": "1a7c3840bb854e99e168e75e842281cc52d587b8c036610a37edce38fd0b6d23"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-bounded-look-sea.jpg",
+      "bytes": 51717,
+      "sha256": "4db7ecdd5b5a111ef703339504f9ad6212ee0d287b24d7a077d44da35fde94b4"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-bounded-look.jpg",
+      "bytes": 52692,
+      "sha256": "9846efc88cc1d2110e1cab75ab49f8beb5f379c6ee150e4ad4e238a6febba110"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-cabin.png",
+      "bytes": 44832,
+      "sha256": "cf0740fefb162f5d8313882ffb69252372dc1347ad91b3d5aaf4dad7473e3acb"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-cancel-desktop.jpg",
+      "bytes": 52940,
+      "sha256": "049244f2c5e311bc8de1ca8a91c072aa84326278c4dc75e7c1e52b5f1fda5c9e"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-cancel-touch.jpg",
+      "bytes": 37260,
+      "sha256": "8a2693436333c7bc5cb9b3fb37d24d739e35864f4d72e460cbd89c617b6eb0a7"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-compact-quay.jpg",
+      "bytes": 66290,
+      "sha256": "f658a47c6a915d6d7d9bb7d763461c32ff65d5b252dcb315f0c7a5a0c71d5050"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-dense-slots.jpg",
+      "bytes": 60564,
+      "sha256": "09cdcb7084297beab8c333dab385c9d631cbde327c2f11874263a7acc6d27a45"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-drag-navigation.jpg",
+      "bytes": 48074,
+      "sha256": "1c80e2c291bd9f3256587b785d6522d1a922d19a564e5e80c1e1ffd490b222ec"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-empty-navigation.jpg",
+      "bytes": 55143,
+      "sha256": "6ab4146ab79bc75a1c458b5e7b9679a1c1e71ce7a05e84abcaa98e3a36f74ee7"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-fixed-manifest-result.jpg",
+      "bytes": 28805,
+      "sha256": "eb4f626b147045bf6f36e1667f2a502540b4308c51f2247b1f5888afb1a26231"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-fixed-view.jpg",
+      "bytes": 60488,
+      "sha256": "5b92ba807904905f17882951533e9ec4a36e0b6622004f8c4d2c9d3049b30787"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-goal-prompt-desktop.png",
+      "bytes": 65105,
+      "sha256": "8634315488de8571a49422a22ab2dc4ded35905a753657c2a0777a5e45241841"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-goal-prompt-touch.png",
+      "bytes": 34189,
+      "sha256": "40d4e3b7ac2bba1b14a2432136741d844df7d30e130fc7c716b8af377d04b131"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-high-view.jpg",
+      "bytes": 47770,
+      "sha256": "048e572f873d29ce19cff6928ea90567b3e5a445066646016b5b7522a5436051"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-horizontal-vessel.jpg",
+      "bytes": 63798,
+      "sha256": "fe54d8f2c3ac79c5fbd99bd17edae7e484a28a4ca72655946f0a9f135ef1f5ab"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-intro-desktop.png",
+      "bytes": 58754,
+      "sha256": "bb1df47d2ba8965a976c4cdf9ebb4552d17b4a64f111ff56936106855448b8ae"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-intro-touch.png",
+      "bytes": 28950,
+      "sha256": "6f4e16bb4f310be018aa85d32386572b66578fec0fbc077ab4bc8b8b94fe3324"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-level-one-four-colors.jpg",
+      "bytes": 65349,
+      "sha256": "084e31ece8fa8c626fd0e3a56524f654d19c8f222e7ce5869f5888fe26108cde"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-loading.png",
+      "bytes": 45360,
+      "sha256": "d5553e399284b5efb18efaeebf0b38b18221313f24f2ad6e3dcfe0205c77b92b"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-look-navigation.jpg",
+      "bytes": 48012,
+      "sha256": "9d2c913b1da804b0a567d0ccdc467b299d6aecd614ecbc313f9880fba297654e"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-phase-four-game-desktop.png",
+      "bytes": 193166,
+      "sha256": "eb1703c7bb748ac3e3012f4c928113cdf629f47510b4362357e7ef22c84b0446"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-phase-four-game-touch.png",
+      "bytes": 88607,
+      "sha256": "3146f1d0d9d6ebf04dfb6219d4fe3bb86066378c1d7df494a2860472cbe08055"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-phase-four-shop-desktop.png",
+      "bytes": 55760,
+      "sha256": "1f5da9d5f7eb1feb659e7e9c43b6f0c31f11e4e6eff15bcdbeb6175602338cd6"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-phase-four-shop-touch.png",
+      "bytes": 32355,
+      "sha256": "cf209341a800046e5819956af0fd8dce92849a24f94017fbf47039c7f0ff5aaa"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-phase-one-narrow.jpg",
+      "bytes": 33106,
+      "sha256": "5b2243504635ac55a25cf553462886a2bdcdfbcc87a98a6c850973c5f258e7e1"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-phase-one.jpg",
+      "bytes": 48026,
+      "sha256": "27fec404685e69ea7c5567d93f2d33b83fc6b46509fcea4944a44ea7d2a74777"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-phase-three-receipt.jpg",
+      "bytes": 52076,
+      "sha256": "56084d0a594fc23cae7ceba426e3cbc4806b616158298f4f0024256d09be2192"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-phase-three-result.jpg",
+      "bytes": 52126,
+      "sha256": "57f91e57c6554f3b423d48761e102c9d700f9e971d74c313824c18897d4cff84"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-phase-two-choice.jpg",
+      "bytes": 36553,
+      "sha256": "370b46c174d7bfa91fefea51d10e663a4c27c3573f00a041da2ad92a7ee2e46b"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-phase-two-narrow.jpg",
+      "bytes": 33354,
+      "sha256": "8d0af80878e282e13c10aa327b4d0976f0dd873c564fd409b38673d5dbc44761"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-phase-two.jpg",
+      "bytes": 49191,
+      "sha256": "d3eb9118cb164db6e8422a8fe3e42bb3daef9a61b9d8ebea5f967b00ba80e325"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-ready.png",
+      "bytes": 62923,
+      "sha256": "39a8f02329021e4ca374067b0409986cbf0b36ebdcb3b251e5a70cc7629b0b0e"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-score-progress-popup.jpg",
+      "bytes": 64487,
+      "sha256": "5db865c5af2e7c116f204d05a778098ada3682efe7e650027306630be5aeb1c9"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-score.png",
+      "bytes": 51108,
+      "sha256": "f5f967284b0a08eb1e7bb3a1bbf8a3a8c3c740d0b1805647ae6639445ffdc52d"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-ship.png",
+      "bytes": 47325,
+      "sha256": "04d98dead8e907b5a74f626a4814567a327c543aae172e65ebee781794e5d17a"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-six-slots.jpg",
+      "bytes": 50814,
+      "sha256": "8eb5a046b93edc93c8502f41e1629d5531d6c9aedfbd2ec6e3927c019b786536"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-spreader-light.png",
+      "bytes": 50247,
+      "sha256": "0af9a4c13f6f4ea8a446567d731f2dcedb04e985b85ded0c70f9413d47ac6acf"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-three-lane-quay.jpg",
+      "bytes": 64694,
+      "sha256": "f0b9bc245f52070d92c63e6ebc3203b9831f6bb7fa174d0d5192bcc3ab2030b8"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-truck-scale.jpg",
+      "bytes": 67246,
+      "sha256": "436b62e398cb2115f62ee9e98f2c55587c68518401a59ec8793c2aa9ab8f487e"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-vessel-scene.jpg",
+      "bytes": 70924,
+      "sha256": "36bc72c2d34a3d62fc53bb2b9b2533db25a9617b26ad983e531e11c5f84b5a60"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview-workorders-dual-trucks.jpg",
+      "bytes": 69701,
+      "sha256": "70a7d289c4b25f4787ec7758286789ff46aa6a72748a48922d84a6d7cba6a22b"
+    },
+    {
+      "path": "prototypes/harbor-operator/preview.png",
+      "bytes": 33371,
+      "sha256": "1414b95ddf2f56c415eb8c03e1c3d5cf870c90e3036a382383ad8bc233ff0522"
+    },
+    {
+      "path": "prototypes/harbor-operator/server.cjs",
+      "bytes": 828,
+      "sha256": "fbd8fff09bbce19ca8f8a14bc9c79ed7239f88f2f26d0017aca919d8a6a9566e"
+    },
+    {
+      "path": "references/codex-clipboard-2277dbce-ee8b-4d1b-9c6a-e321ba212ac2.png",
+      "bytes": 486142,
+      "sha256": "5e14bd7a405ae3de71486679dd0cf8b542c5736f141de94aa8c8b564f6767501"
+    },
+    {
+      "path": "references/codex-clipboard-36eb34cc-8d55-49de-832c-d55ee41987bf.png",
+      "bytes": 604720,
+      "sha256": "dd62d25293d58cbb87ce5a50151c39e5d7897bcd1ca01ae075f30eff72047f4b"
+    },
+    {
+      "path": "references/codex-clipboard-d0099514-9a48-400a-b397-c57ceb15a42d.png",
+      "bytes": 604720,
+      "sha256": "dd62d25293d58cbb87ce5a50151c39e5d7897bcd1ca01ae075f30eff72047f4b"
+    },
+    {
+      "path": "sites/harbor-playtest-20261030.tar.gz",
+      "bytes": 27843,
+      "sha256": "7dca165476449241f1892f05abf85860c58a75408b91b51a781b758032392333"
+    },
+    {
+      "path": "sites/harbor-playtest-20261030/dist/config.js",
+      "bytes": 643,
+      "sha256": "690b4f8c1d7bbea2514b99c4cd39b3ba35d609d523c9e9ea2d125cf37c5e14ee"
+    },
+    {
+      "path": "sites/harbor-playtest-20261030/dist/core.js",
+      "bytes": 16636,
+      "sha256": "36b4487621c36caa869ea1090403447c6246d58e80dcc0e3abc6141235949142"
+    },
+    {
+      "path": "sites/harbor-playtest-20261030/dist/game.js",
+      "bytes": 39107,
+      "sha256": "230c95bc7543b24b531e8b4830e2eb1b15e56efa97c418612a901acd03e9a98b"
+    },
+    {
+      "path": "sites/harbor-playtest-20261030/dist/index.html",
+      "bytes": 10171,
+      "sha256": "223099f9997bcc5f99dfd2d9988c8b181dfc5cb38733736e8fe7282c260eac91"
+    },
+    {
+      "path": "sites/harbor-playtest-20261030/dist/orders.js",
+      "bytes": 10681,
+      "sha256": "60872bbd8f26e66cd4321f8c7d976b8311e6bc10e65578c6c285719db1d5657d"
+    },
+    {
+      "path": "sites/netlify-playtest-20261030.zip",
+      "bytes": 60412,
+      "sha256": "28e3b9d047633524714210bbf8a715357cbe0783051334ef3b73a024e0e8e1f8"
+    },
+    {
+      "path": "sites/netlify-playtest-20261030/config.js",
+      "bytes": 641,
+      "sha256": "8e7f181c4b0e7e182c4b32f431fb283c645bd47e0fdac77e5dea7a1a9bf310f0"
+    },
+    {
+      "path": "sites/netlify-playtest-20261030/core.js",
+      "bytes": 16734,
+      "sha256": "d9804364ee9466035da333b142da9a06631f60f43e62823d134bb65e22ada25b"
+    },
+    {
+      "path": "sites/netlify-playtest-20261030/game.js",
+      "bytes": 40186,
+      "sha256": "c714dc37170d0dc10ad158b1a9edbc75d808dcce91bb4b09f29b0a7793341af8"
+    },
+    {
+      "path": "sites/netlify-playtest-20261030/index.html",
+      "bytes": 9609,
+      "sha256": "a80c5795a995cee1e0dacc492bbfcd8149f9e995638260c9a9ec05872379a0f4"
+    },
+    {
+      "path": "sites/netlify-playtest-20261030/orders.js",
+      "bytes": 10719,
+      "sha256": "35b1c08d56d0b853f9401a775091259db00bedfcb7b3b606c2f7deb9ce31260d"
+    }
+  ],
+  "netlifyZip": {
+    "fileEntries": 10,
+    "directoryEntries": 1,
+    "duplicateSubdirectory": true,
+    "allGameContentsMatchCurrent": true,
+    "modifiedDuringArchive": false
+  }
+}

@@ -1,0 +1,13 @@
+const {chromium}=require('playwright'),assert=require('node:assert/strict');
+(async()=>{const browser=await chromium.launch({channel:'msedge',headless:true});try{for(const touch of [false,true]){
+ const context=await browser.newContext({viewport:{width:touch?320:930,height:touch?640:884},hasTouch:touch,isMobile:touch}),page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));const press=l=>touch?l.tap():l.click();await page.goto('http://localhost:4173/');await press(page.locator('#dialogPrimary'));
+ async function delivery(cross=true){await page.evaluate(cross=>{s.points.total=cross?Harbor.goals[s.column]-100:s.points.total;s.held={id:9999,size:2,color:'red',owner:'power'};control.select(6);},cross);await page.waitForFunction(()=>control.phase==='idle');await press(page.locator('#action'));await page.waitForFunction(()=>control.phase==='returning');assert.equal(await page.locator('#dialog').isVisible(),false);await page.waitForFunction(()=>control.phase==='idle');}
+ for(let col=0;col<5;col++){
+  await delivery();await page.getByRole('heading',{name:col===4?'本列已达标，是否结算？':'封存本列，进入下一列？',exact:true}).waitFor();assert.equal(await page.evaluate(()=>s.column),col);assert.equal(await page.evaluate(()=>control.phase),'idle');
+  if(col===0){await press(page.getByRole('button',{name:'继续本列装载',exact:true}));assert.equal(await page.evaluate(()=>s.column),0);await delivery(false);await page.waitForTimeout(200);assert.equal(await page.locator('#dialog').isVisible(),false);await press(page.locator('#nextColumn'));}
+  if(col<4){await press(page.getByRole('button',{name:'封存并进入下一列',exact:true}));await page.getByRole('heading',{name:'第'+(col+2)+'列 · 合约兑换',exact:true}).waitFor();await press(page.locator('#dialogPrimary'));}
+  else{await press(page.getByRole('button',{name:'继续本列装载',exact:true}));assert.equal(await page.evaluate(()=>s.ended),false);await press(page.locator('#endShift'));await page.getByRole('heading',{name:'达标交付',exact:true}).waitFor();}
+ }
+ await press(page.getByRole('button',{name:'重新开始',exact:true}));await press(page.locator('#dialogPrimary'));await delivery();await page.getByRole('heading',{name:'封存本列，进入下一列？',exact:true}).waitFor();assert.equal(await page.evaluate(()=>s.coins),0);
+ await page.screenshot({path:'prototypes/harbor-operator/preview-goal-prompt-'+(touch?'touch':'desktop')+'.png'});assert.deepEqual(errors,[]);await context.close();
+}console.log('PASS: desktop/touch all five goal prompts after crane return, continue without repeated prompt, manual advance retained, final-column continue/settlement, prompt reset on restart; no page errors.');}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});
